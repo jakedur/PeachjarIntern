@@ -313,7 +313,7 @@
         var regex = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
         var result = yemail2.replace(/\s/g, "").split(/,|;/);
         for(var i = 0;i < result.length;i++) {
-        if(!regex.test(result[i])) {
+        if(!regex.test(result[i]) || yemail2 =="") {
         return false;
         }
         }
