@@ -2,9 +2,7 @@
 <!-- saved from url=(0040)https://www.peachjar.com/contact-us.html -->
 <html lang="en" data-livestyle-extension="available">
     <head>
-
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
         <title>Peachjar | Share Flyer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="./share_flyer_files/socicon.css" rel="stylesheet" type="text/css" media="all">
@@ -21,19 +19,165 @@
         <link href="./share_flyer_files/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
         <link href="./share_flyer_files/css" rel="stylesheet" type="text/css">
         <style type="text/css" media="screen">
-
         </style>
         
         <script src="./share_flyer_files/jquery-2.1.4.min.js" integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script>
         <script>
         if (!window.jQuery) {
-            document.write('<script src="js/jquery-2.1.4.min.js"><\/script>');
+        document.write('<script src="js/jquery-2.1.4.min.js"><\/script>');
         }
         </script>
         
         <script src="./share_flyer_files/api.js"></script>
+        <style>
+        #sfly {
+        color: black;
+        font-weight: bold;
+        }
+        #infod {
+        max-width: 450px;
+        }
+        .toone {
+        margin-left: 30px;
+        color: #9e9e9e;
+        }
+        input {
+        width: 450px;
+        }
+        #sendb {
+        width: 130px;
+        }
+        .flyimg {
+        display: block;
+        margin: 0 auto;
+        width: 225px !important;
+        }
+        #flyimgdiv {
+        background-color: #313a6c !important;
+        }
+        #titled {
+        color: darkorange;
+        font-size: 20px;
+        text-align: center;
+        margin: 15px 65px;
+        }
+        #urlimg {
+        border-style: solid;
+        border-width: thin;
+        display: block;
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 50px 30px 50px 30px;
+        color: darkgrey;
+        }
+        .backcol2 {
+        background-color: white;
+        }
+        .popup {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        }
+        
+        /* The actual popup */
+        .popup .popuptext {
+        visibility: hidden;
+        width: 200px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -80px;
+        }
+        
+        /* Popup arrow */
+        .popup .popuptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+        }
+        
+        /* Toggle this class - hide and show the popup */
+        .popup .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+        }
+        
+        /* Add animation (fade in the popup) */
+        @-webkit-keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+        }
+        
+        @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity:1 ;}
+        }
+        
+        .popup2 {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        }
+        
+        /* The actual popup */
+        .popup2 .popuptext2 {
+        visibility: hidden;
+        width: 200px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -80px;
+        }
+        
+        /* Popup arrow */
+        .popup2 .popuptext2::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+        }
+        
+        /* Toggle this class - hide and show the popup */
+        .popup2 .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+        }
+        .errorc {
+        border: 3px solid red !important;
+        }
+        </style>
     </head>
-
     <body data-reveal-selectors="section:not(.masonry):not(:first-of-type):not(.parallax):not(.thank--you)" class="v2 contact-form">
         <!-- START NAV -->
         <div class="nav-container">
@@ -48,255 +192,368 @@
                         <div class="nav-module menu-module left">
                             <ul class="menu">
                                 <li class="dropdown"><a href="https://www.peachjar.com/contact-us.html#">SOLUTIONS</a><i class="fa fa-caret-down fa-2x" aria-hidden="true"></i>
-                                    <ul class="dropdown-menu" style="margin-top: 0px">
-                                        <li><a href="https://www.peachjar.com/schools.html">For Districts &amp; Schools</a></li>
-                                        <li><a href="https://www.peachjar.com/program-providers.html">For Program Providers</a></li>
-                                        <li><a href="https://www.peachjar.com/parents.html">For Parents</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="https://www.peachjar.com/contact-us.html#">COMPANY</a><i class="fa fa-caret-down fa-2x" aria-hidden="true"></i>
-                                    <ul class="dropdown-menu" style="margin-top: 0px">
-                                        <li><a href="https://www.peachjar.com/about-us.html">About</a></li>
-                                        <li><a href="https://www.peachjar.com/careers.html">Careers</a></li>
-                                        <li><a href="https://www.peachjar.com/press.html">Press</a>&nbsp;&nbsp;</li>
-                                        <li><a href="https://www.peachjar.com/partners.html">Partners</a></li>
-                                        <li><a href="https://www.peachjar.com/webinars.html">Webinars</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="http://blog.peachjar.com/" target="_blank">BLOG</a></li>
-                                <a href="https://www.peachjar.com/pricing.html" class="btn btn--sm btn--peachjar-color nav-btn hide">
-                                    <span class="btn__text">Cyber Monday Sale</span>
-                                </a>
-                            </ul>
-                        </div>
-                        <div class="nav-module right hidden-xs hidden-sm">
-                            <a href="https://www.peachjar.com/index.php?a=4" class="btn btn--sm btn--light nav-btn" style="display: none;">
-                                <span class="btn__text">Login</span>
-                            </a>
-                            <a href="https://www.peachjar.com/index.php?a=4" class="btn btn--primary btn--sm nav-btn">
-                                <span class="btn__text">My Account</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="nav-mobile-toggle visible-sm visible-xs">
-                    <i class="fa fa-bars"></i>
-                </div>
-            </nav>
-        </div>
-        <!-- END NAV -->
-        <!-- =========================================================================================================================================================================== -->
-        <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
-        <!-- =========================================================================================================================================================================== -->
-        <div class="main-container ">
-            <!-- START  -->
-            <section class="bg--secondary">
-                <div class="container">
-                    THIS IS WHERE THE SHARE A FLYER CONTENT SHOULD GO
-                </div>
-            </section>
-            
-            
-            <!-- =========================================================================================================================================================================== -->
-            <!-- START FOOTER -->
-            <!-- ====================================================================================================================================== -->
-            <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
-            <!-- ====================================================================================================================================== -->
-            <footer class="bg--dark footer-4">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-4 mobile-footer-top">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <a href="https://www.peachjar.com/index.html" class="go-home">
-                                        <!-- LOGO  -->
-                                        <span class="logo-box">
-                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 90" height="42">
-                                            <path d="M29.78,0c6.85,6.35,13.19,14.45,14,23.51a26.71,26.71,0,0,1-4.14,17.06c-7.68-1.63-14-7.21-14.92-17.22S28.21,2.94,29.78,0Z" style="fill:#4caf50"></path>
-                                            <path d="M72,54.5c-.91-23.37-25.84-25.21-25.84-25.21-12-2.49-16.31,6-14.4,14.17,0,0,4.26,33.59,8.19,46.54C47.26,82.6,72.87,77.86,72,54.5Z" style="fill:#ff6d00"></path>
-                                            <path d="M41.23,40.76c2-17,21.24-18.07,21.24-18.07l-2.09-5.08c-19.4,4.48-22.1,21-22.34,23A22.94,22.94,0,0,1,41.23,40.76Z" style="fill:#ac721b"></path>
-                                            <path d="M62.46,60.31C62.33,40.43,39,40.56,39,40.56c-2.55-4-7-5.29-11.69-5.29a42.45,42.45,0,0,0-13.45,2.14l-.56.65c-9,11-8.69,24-.3,33.73S34.55,86.34,40,90C39.91,83.83,62.46,76.76,62.46,60.31Z" style="fill:#ffab00"></path>
-                                            <path d="M21.68,22.17A96.17,96.17,0,0,0,0,19,38.63,38.63,0,0,0,12,36.09c9,7.16,19.86,6.86,26.93,4.49C39,36.66,32.3,25.18,21.68,22.17Z" style="fill:#64dd17"></path>
-                                          </svg>
-                                        </span>
-                                        <span class="company-name">peachjar</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <a href="https://goo.gl/maps/p8VJXoB6Tt32" class="address" target="_blank">
-                                        <address>
-                                            13290 Evening Creek Dr #200
-                                            <br class="hidden-sm hidden-xs"> San Diego, CA 92128
-                                        </address>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <a class="tel" href="tel:1-858-997-2117">
-                                        <span class="icon-box-small">
-                                            <i class="fa fa-phone m-r-sm" aria-hidden="true"></i>
-                                        </span>
-                                        <span>(858) 997-2117</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row m-b">
-                                <div class="col-xs-12">
-                                    <a class="email" href="mailto:gogreen@peachjar.com">
-                                        <span class="icon-box-small">
-                                            <i class="fa fa-envelope-o m-r-sm" aria-hidden="true"></i>
-                                        </span> gogreen@peachjar.com
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-5 col-sm-12">
-                            <div class="row">
-                                <div class="col-xs-6">
-                                    <!-- <div class="footer__navigation"> -->
-                                    <h6>Company</h6>
-                                    <ul class="nav-links footer__navigation">
-                                        <li>
-                                            <a href="https://www.peachjar.com/about-us.html">
-                                                <span>About Us</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.peachjar.com/careers.html">
-                                                <span>Careers</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.peachjar.com/press.html">
-                                                <span>Press</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://blog.peachjar.com/blog">
-                                                <span>Blog</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-xs-6">
-                                    <!-- <div class="footer__navigation"> -->
-                                    <h6>Navigate</h6>
-                                    <ul class="nav-links footer__navigation">
-                                        <li>
-                                            <a href="https://www.peachjar.com/schools.html">
-                                                <span>Schools</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.peachjar.com/program-providers.html">
-                                                <span>Program Providers</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.peachjar.com/parents.html">
-                                                <span>Parents</span>
-                                            </a>
-                                        </li>
-                                        <!--  <li>
-                                            <a href="contact-us.html">
-                                                <span>Support</span>
-                                            </a>
-                                        </li> -->
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-12">
-                            <div class="row">
-                                <div class="col-xs-6 col-md-12">
-                                    <h6 class="m-b-sm">Connect with Us</h6>
-                                    <ul class="social-list">
-                                        <li>
-                                            <a href="https://www.instagram.com/peachjarinc" target="_blank">
-                                                <i class="socicon-instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.twitter.com/peachjarinc" target="_blank">
-                                                <i class="socicon-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.facebook.com/pages/Peachjar/185707198163004" target="_blank">
-                                                <i class="socicon-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="https://www.linkedin.com/company/peachjar" target="_blank">
-                                                <i class="socicon-linkedin"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-xs-6 col-md-12 get-help">
-                                    <h6 class="m-b-0">Need Information?</h6>
-                                    <ul>
-                                        <li>
-                                            <a href="https://www.peachjar.com/contact-us.html">
-                                                <span>Contact Us</span>
-                                            </a>
-                                        </li>
-                                        <li><a title="Frequently Asked Questions" href="https://www.peachjar.com/faqs.html">FAQs</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end of row-->
-                </div>
-                <!--end of container-->
-                <div class="footer__lower">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-5 col-sm-offset-0 col-xs-10 col-xs-offset-1 text-center-xs">
-                                <span class="type--fine-print">© Copyright
-                        <span class="update-year">2017</span> Peachjar, Inc. - All Rights Reserved</span>
-                            </div>
-                            <div class="col-sm-5 col-sm-offset-0 col-xs-10 col-xs-offset-1 text-left sub-footer-links">
-                                <ul class="list-inline">
-                                    <li><a title="Terms &amp; Conditions" href="https://www.peachjar.com/privacy-policy-terms.html#terms"><span>terms</span></a></li>
-                                    <!--<li><a title="Accesibility" href="privacy-policy-terms.html#accesibility"><span>accessibility</span></a></li>-->
-                                    <li><a title="Privacy" href="https://www.peachjar.com/privacy-policy-terms.html#privacy"><span>privacy</span></a></li>
-                                    <li><a title="Link to Accessibility terms" href="https://www.peachjar.com/privacy-policy-terms.html#Accessibility-hash">Accessibility</a></li>
+                                <ul class="dropdown-menu" style="margin-top: 0px">
+                                    <li><a href="https://www.peachjar.com/schools.html">For Districts &amp; Schools</a></li>
+                                    <li><a href="https://www.peachjar.com/program-providers.html">For Program Providers</a></li>
+                                    <li><a href="https://www.peachjar.com/parents.html">For Parents</a></li>
                                 </ul>
-                            </div>
-                            <div class="col-sm-12 col-sm-offset-0 col-xs-10 col-xs-offset-1 text-right text-center-xs">
-                                <a href="https://www.peachjar.com/contact-us.html#top" class="inner-link top-link">
-                                    <i class="interface-up-open-big"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!--end of row-->
-                    </div>
-                    <!--end of container-->
+                            </li>
+                            <li><a href="https://www.peachjar.com/contact-us.html#">COMPANY</a><i class="fa fa-caret-down fa-2x" aria-hidden="true"></i>
+                            <ul class="dropdown-menu" style="margin-top: 0px">
+                                <li><a href="https://www.peachjar.com/about-us.html">About</a></li>
+                                <li><a href="https://www.peachjar.com/careers.html">Careers</a></li>
+                                <li><a href="https://www.peachjar.com/press.html">Press</a>&nbsp;&nbsp;</li>
+                                <li><a href="https://www.peachjar.com/partners.html">Partners</a></li>
+                                <li><a href="https://www.peachjar.com/webinars.html">Webinars</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="http://blog.peachjar.com/" target="_blank">BLOG</a></li>
+                        <a href="https://www.peachjar.com/pricing.html" class="btn btn--sm btn--peachjar-color nav-btn hide">
+                            <span class="btn__text">Cyber Monday Sale</span>
+                        </a>
+                    </ul>
                 </div>
-            </footer>
-            <!-- END FOOTER -->
-            
+                <div class="nav-module right hidden-xs hidden-sm">
+                    <a href="https://www.peachjar.com/index.php?a=4" class="btn btn--sm btn--light nav-btn" style="display: none;">
+                        <span class="btn__text">Login</span>
+                    </a>
+                    <a href="https://www.peachjar.com/index.php?a=4" class="btn btn--primary btn--sm nav-btn">
+                        <span class="btn__text">My Account</span>
+                    </a>
+                </div>
+            </div>
         </div>
-        <!-- END MAIN CONTAINER -->
-        <script src="./share_flyer_files/owl.carousel.min.js"></script>
-        <script src="./share_flyer_files/twitterfetcher.min.js"></script>
-        <script src="./share_flyer_files/smooth-scroll.min.js"></script>
-        <script src="./share_flyer_files/scrollreveal.min.js"></script>
-        <script src="./share_flyer_files/parallax.js"></script>
-        <script src="./share_flyer_files/lodash.min.js"></script>
-        <!--<script src="js/min/scripts-min.js "></script>-->
-        <script src="./share_flyer_files/scripts.js"></script>
-        <!-- custom JAVASCRIPTS -->
-        <!-- <script src="js/min/app-min.js "></script> -->
-        <script src="./share_flyer_files/app.js"></script>
-        <script type="text/javascript" src="./share_flyer_files/chat.js"></script>
-        <script src="./share_flyer_files/jquery.validate.min.js"></script>
-        <script src="./share_flyer_files/jquery.cookie.js"></script>
-
-    </body>
+        <div class="nav-mobile-toggle visible-sm visible-xs">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+</div>
+<!-- END NAV -->
+<!-- =========================================================================================================================================================================== -->
+<!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<!-- =========================================================================================================================================================================== -->
+<div class="main-container ">
+    <!-- START  -->
+    <section class="bg--secondary">
+        <div class="container">
+            <div class="col-md-6">
+                <h2> Share a Flyer</h2>
+                <div id="infod"> Enter the recipient's email address below and hit send. You can add multiple email addresses, separated by comma or semicolon.</div><br>
+                <div class='toone'>
+                    To: *
+                </div>
+                <div class="popup2">
+                    <input type="text" id='toemail' placeholder="To Email Address" required>
+                    <span class="popuptext2" id="myPopup2">Invalid Email Address</span>
+                    <br><br>
+                    <div class='toone'>
+                        Your Email:
+                    </div></div><div class="popup">
+                    
+                    <input type="text" id='youremail' placeholder="Your Email Address" required>
+                    <span class="popuptext" id="myPopup">Invalid Email Address</span></div>
+                    <br><br>
+                    <a class = "btn btn--primary btn--sm" id="clickyour">
+                        <span class="btn__text">
+                            Send
+                        </span>
+                    </a>
+                    <span id="finmsg"></span>
+                </div>
+                <div class="col-md-6">
+                    <div class="backcall2" style="background-color:white">
+                        <div class="backcall3" style="background-color: #313a6c !important">
+                            <img alt="logo" class="logo logo-dark logo-svg" src="./share_flyer_files/pj-logo-header.svg" style= "display: block !important; margin:0 auto; width: 225px !important; ">
+                            <br>
+                        </div>
+                        <div id="imgname">
+                        </div>
+                        <div id="takeimg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <script src="./share_flyer_files/jquery-2.1.4.min.js"> </script>
+        <script type="text/javascript">
+        $(document).ready(function () {
+        gets = {};
+        $.each(location.search.replace(/^\?/,'').split('&'),function(k,v){
+        bits = v.split('=');
+        gets[bits[0]] = bits[1];
+        });
+        console.log(gets);
+        var fromhow = gets.from;
+        fromhow = fromhow.replace('%40', '@');
+        $('#youremail').prop("value", fromhow);
+        var title = gets.flyertitle;
+        title = decodeURI(title);
+        title = title.replace(new RegExp('%26', 'g'), '&');
+        console.log(title);
+        $('#imgname').append('<div id="titled">' + title + '</div>');
+        imgurl = decodeURIComponent(gets.flyerurl);
+        console.log(imgurl);
+        $('#takeimg').append('<img src="' + imgurl + '" alt="flyerimg" id="urlimg">');
+        $('#clickyour').click(function validateEmail(event) {
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        var yemail = document.getElementById("youremail");
+        if (re.test(yemail.value)) {
+        var popup = document.getElementById("myPopup");
+        popup.classList.remove("show");
+        $('#youremail').removeClass('errorc');
+        }
+        else {
+        var popup = document.getElementById("myPopup");
+        popup.classList.add("show");
+        $('#youremail').addClass('errorc')
+        }
+        var yemail2 = document.getElementById("toemail").value;
+        function validate(yemail2) {
+        var regex = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+        var result = yemail2.replace(/\s/g, "").split(/,|;/);
+        for(var i = 0;i < result.length;i++) {
+        if(!regex.test(result[i])) {
+        return false;
+        }
+        }
+        return true;
+        }
+        if (validate(yemail2)) {
+        var popup2 = document.getElementById("myPopup2");
+        popup2.classList.remove("show");
+        $('#toemail').removeClass('errorc');
+        }
+        else {
+        var popup2 = document.getElementById("myPopup2");
+        popup2.classList.add("show");
+        $('#toemail').addClass('errorc');
+        }
+        var flyerid = gets.flyerid;
+        if (validate(yemail2) && re.test(yemail.value)) {
+        $.ajax({
+        url: "http://www.mocky.io/v2/596e4ae20f00009c052b813e",
+        data: {
+        emailTo: yemail2.value,
+        emailFrom: yemail.value,
+        flyerId: flyerid.value,
+        flyerUrl: imgurl.value
+        },
+        success: function(data) {
+        $('#finmsg').html('Thank you. Your flyer has been sent!'); //MAKE THIS A CLASS TO TOGGLE INVIS AND REMOVE VALUE ON INPUT
+        $('#toemail').prop('value', "");
+        },
+        error: function() {
+        $('#finmsg').html('<span style="color:red">Error! Your flyer had not been sent.</span>');
+        }
+        });
+        
+        }
+        else {
+        
+        }
+        
+        });
+        });
+        </script>
+        <!-- =========================================================================================================================================================================== -->
+        <!-- START FOOTER -->
+        <!-- ====================================================================================================================================== -->
+        <!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+        <!-- ====================================================================================================================================== -->
+        <footer class="bg--dark footer-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 mobile-footer-top">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <a href="https://www.peachjar.com/index.html" class="go-home">
+                                    <!-- LOGO  -->
+                                    <span class="logo-box">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 90" height="42">
+                                        <path d="M29.78,0c6.85,6.35,13.19,14.45,14,23.51a26.71,26.71,0,0,1-4.14,17.06c-7.68-1.63-14-7.21-14.92-17.22S28.21,2.94,29.78,0Z" style="fill:#4caf50"></path>
+                                    <path d="M72,54.5c-.91-23.37-25.84-25.21-25.84-25.21-12-2.49-16.31,6-14.4,14.17,0,0,4.26,33.59,8.19,46.54C47.26,82.6,72.87,77.86,72,54.5Z" style="fill:#ff6d00"></path>
+                                <path d="M41.23,40.76c2-17,21.24-18.07,21.24-18.07l-2.09-5.08c-19.4,4.48-22.1,21-22.34,23A22.94,22.94,0,0,1,41.23,40.76Z" style="fill:#ac721b"></path>
+                            <path d="M62.46,60.31C62.33,40.43,39,40.56,39,40.56c-2.55-4-7-5.29-11.69-5.29a42.45,42.45,0,0,0-13.45,2.14l-.56.65c-9,11-8.69,24-.3,33.73S34.55,86.34,40,90C39.91,83.83,62.46,76.76,62.46,60.31Z" style="fill:#ffab00"></path>
+                        <path d="M21.68,22.17A96.17,96.17,0,0,0,0,19,38.63,38.63,0,0,0,12,36.09c9,7.16,19.86,6.86,26.93,4.49C39,36.66,32.3,25.18,21.68,22.17Z" style="fill:#64dd17"></path>
+                    </svg>
+                </span>
+                <span class="company-name">peachjar</span>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <a href="https://goo.gl/maps/p8VJXoB6Tt32" class="address" target="_blank">
+                <address>
+                    13290 Evening Creek Dr #200
+                    <br class="hidden-sm hidden-xs"> San Diego, CA 92128
+                </address>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <a class="tel" href="tel:1-858-997-2117">
+                <span class="icon-box-small">
+                    <i class="fa fa-phone m-r-sm" aria-hidden="true"></i>
+                </span>
+                <span>(858) 997-2117</span>
+            </a>
+        </div>
+    </div>
+    <div class="row m-b">
+        <div class="col-xs-12">
+            <a class="email" href="mailto:gogreen@peachjar.com">
+                <span class="icon-box-small">
+                    <i class="fa fa-envelope-o m-r-sm" aria-hidden="true"></i>
+                </span> gogreen@peachjar.com
+            </a>
+        </div>
+    </div>
+</div>
+<div class="col-md-5 col-sm-12">
+    <div class="row">
+        <div class="col-xs-6">
+            <!-- <div class="footer__navigation"> -->
+            <h6>Company</h6>
+            <ul class="nav-links footer__navigation">
+                <li>
+                    <a href="https://www.peachjar.com/about-us.html">
+                        <span>About Us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.peachjar.com/careers.html">
+                        <span>Careers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.peachjar.com/press.html">
+                        <span>Press</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://blog.peachjar.com/blog">
+                        <span>Blog</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xs-6">
+            <!-- <div class="footer__navigation"> -->
+            <h6>Navigate</h6>
+            <ul class="nav-links footer__navigation">
+                <li>
+                    <a href="https://www.peachjar.com/schools.html">
+                        <span>Schools</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.peachjar.com/program-providers.html">
+                        <span>Program Providers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.peachjar.com/parents.html">
+                        <span>Parents</span>
+                    </a>
+                </li>
+                <!--  <li>
+                    <a href="contact-us.html">
+                        <span>Support</span>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="col-md-3 col-sm-12">
+    <div class="row">
+        <div class="col-xs-6 col-md-12">
+            <h6 class="m-b-sm">Connect with Us</h6>
+            <ul class="social-list">
+                <li>
+                    <a href="https://www.instagram.com/peachjarinc" target="_blank">
+                        <i class="socicon-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/peachjarinc" target="_blank">
+                        <i class="socicon-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/pages/Peachjar/185707198163004" target="_blank">
+                        <i class="socicon-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/peachjar" target="_blank">
+                        <i class="socicon-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xs-6 col-md-12 get-help">
+            <h6 class="m-b-0">Need Information?</h6>
+            <ul>
+                <li>
+                    <a href="https://www.peachjar.com/contact-us.html">
+                        <span>Contact Us</span>
+                    </a>
+                </li>
+                <li><a title="Frequently Asked Questions" href="https://www.peachjar.com/faqs.html">FAQs</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+<!--end of row-->
+</div>
+<!--end of container-->
+<div class="footer__lower">
+<div class="container">
+<div class="row">
+    <div class="col-sm-5 col-sm-offset-0 col-xs-10 col-xs-offset-1 text-center-xs">
+        <span class="type--fine-print">© Copyright
+            <span class="update-year">2017</span> Peachjar, Inc. - All Rights Reserved</span>
+        </div>
+        <div class="col-sm-5 col-sm-offset-0 col-xs-10 col-xs-offset-1 text-left sub-footer-links">
+            <ul class="list-inline">
+                <li><a title="Terms &amp; Conditions" href="https://www.peachjar.com/privacy-policy-terms.html#terms"><span>terms</span></a></li>
+                <!--<li><a title="Accesibility" href="privacy-policy-terms.html#accesibility"><span>accessibility</span></a></li>-->
+                <li><a title="Privacy" href="https://www.peachjar.com/privacy-policy-terms.html#privacy"><span>privacy</span></a></li>
+                <li><a title="Link to Accessibility terms" href="https://www.peachjar.com/privacy-policy-terms.html#Accessibility-hash">Accessibility</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-12 col-sm-offset-0 col-xs-10 col-xs-offset-1 text-right text-center-xs">
+            <a href="https://www.peachjar.com/contact-us.html#top" class="inner-link top-link">
+                <i class="interface-up-open-big"></i>
+            </a>
+        </div>
+    </div>
+    <!--end of row-->
+</div>
+<!--end of container-->
+</div>
+</footer>
+<!-- END FOOTER -->
+</div>
+<!-- END MAIN CONTAINER -->
+<script src="./share_flyer_files/owl.carousel.min.js"></script>
+<script src="./share_flyer_files/twitterfetcher.min.js"></script>
+<script src="./share_flyer_files/smooth-scroll.min.js"></script>
+<script src="./share_flyer_files/scrollreveal.min.js"></script>
+<script src="./share_flyer_files/parallax.js"></script>
+<script src="./share_flyer_files/lodash.min.js"></script>
+<!--<script src="js/min/scripts-min.js "></script>-->
+<script src="./share_flyer_files/scripts.js"></script>
+<!-- custom JAVASCRIPTS -->
+<!-- <script src="js/min/app-min.js "></script> -->
+<script src="./share_flyer_files/app.js"></script>
+<script type="text/javascript" src="./share_flyer_files/chat.js"></script>
+<script src="./share_flyer_files/jquery.validate.min.js"></script>
+<script src="./share_flyer_files/jquery.cookie.js"></script>
+</body>
 </html>
